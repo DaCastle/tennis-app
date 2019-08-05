@@ -3,7 +3,7 @@ import Notifications from './Notifications';
 import PostList from '../posts/PostList';
 import { connect } from 'react-redux';
 import { firestoreConnect } from 'react-redux-firebase';
-import { compose } from '../../../../../Users/dakot/AppData/Local/Microsoft/TypeScript/3.5/node_modules/redux';
+import { compose } from 'redux';
 
 class Dashboard extends Component {
 
