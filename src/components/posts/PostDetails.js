@@ -2,8 +2,9 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { firestoreConnect } from 'react-redux-firebase';
 import { compose } from 'redux';
-import { Redirect } from 'react-router-dom';
+import { Redirect, NavLink } from 'react-router-dom';
 import moment from 'moment';
+
 
 const PostDetails = (props) => {
     const { post, auth } = props;
@@ -11,9 +12,15 @@ const PostDetails = (props) => {
 
     if (post) {
         return (
-            <div className="container section project-details">
+            <div className="container section post-details">
                 <div className="card z-depth-0">
+                    <span>
+                        <NavLink to='/'>
+                            <i className="material-icons small">keyboard_backspace</i>
+                        </NavLink>
+                    </span>
                     <div className="card-content">
+
                         <span className="card-title">{post.title}</span>
                         <p>{post.content}</p>
                     </div>
