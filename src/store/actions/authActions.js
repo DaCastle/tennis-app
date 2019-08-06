@@ -38,7 +38,9 @@ export const signUp = (newUser) => {
                 initials: newUser.firstName[0] + newUser.lastName[0],
                 phoneNumber: newUser.phoneNumber,
                 ntrpLevel: newUser.ntrpLevel,
-                email: newUser.email
+                email: newUser.email,
+                joined: new Date()
+
             })
         }).then(() => {
             dispatch({ type: 'SIGNUP_SUCCESS' });
