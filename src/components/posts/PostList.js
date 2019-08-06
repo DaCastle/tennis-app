@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom';
 const PostList = ({ posts }) => {
 
     return (
-        <div className="project-list section">
+        <div className="post-list section">
 
             {posts && posts.map(post => {
                 return (
                     <Link to={'/post/' + post.id} key={post.id}>
-                        <PostSummary post={post}/>
+                        <PostSummary post={post} />
                     </Link>
                 )
             })}
