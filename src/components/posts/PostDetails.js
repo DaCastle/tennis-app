@@ -7,7 +7,11 @@ import moment from 'moment';
 
 
 const PostDetails = (props) => {
-    const { post, auth } = props;
+
+    const { post, auth, profile } = props;
+
+    console.log('PostDetails props', props);
+
     if (!auth.uid) return <Redirect to='/signin' />
 
     if (post) {
@@ -25,7 +29,7 @@ const PostDetails = (props) => {
                         <p>{post.content}</p>
                     </div>
                     <div className="card-action grey lighten-4 grey-text">
-                        <div>Posted by {post.authorFirstName} {post.authorLastName}</div>
+                        <div>{post.authorFirstName} {post.authorLastName} - {profile.ntrpLevel} NTRP - Phone: {profile.phoneNumber} - Email: {profile.email}</div>
                         <div>{moment(post.createdAt.toDate()).calendar()}</div>
                     </div>
                 </div>
@@ -47,7 +51,8 @@ const mapStateToProps = (state, ownProps) => {
     const post = posts ? posts[id] : null;
     return {
         post: post,
-        auth: state.firebase.auth
+        auth: state.firebase.auth,
+        profile: state.firebase.profile
     }
 }
 

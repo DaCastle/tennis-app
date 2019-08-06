@@ -11,6 +11,7 @@ class Dashboard extends Component {
 
     render() {
         const { posts, auth, notifications } = this.props;
+        console.log('dashboard props', this.props);
 
         if (!auth.uid) return <Redirect to='/signin' />
 

@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import { signOut } from '../../store/actions/authActions';
 
 const SignedInLinks = (props) => {
+    console.log('SignedInLinks props', props);
     return (
         <ul className="right">
             <li><NavLink to='/create'>New Post</NavLink></li>

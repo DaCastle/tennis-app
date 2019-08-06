@@ -21,6 +21,7 @@ class SignUp extends Component {
     }
     render() {
         const { auth, authError } = this.props;
+        console.log('SignUp props', this.props);
         if (auth.uid) return <Redirect to='/' />
         return (
             <div className="container">
@@ -28,19 +29,27 @@ class SignUp extends Component {
                     <h5 className="grey-text text-darken-3">Sign Up</h5>
                     <div className="input-field">
                         <label htmlFor="email">Email</label>
-                        <input type="email" id="email" onChange={this.handleChange} />
+                        <input type="email" id="email" required onChange={this.handleChange} />
                     </div>
                     <div className="input-field">
                         <label htmlFor="password">Password</label>
-                        <input type="password" id="password" onChange={this.handleChange} />
+                        <input type="password" id="password" required onChange={this.handleChange} />
                     </div>
                     <div className="input-field">
                         <label htmlFor="lastName">Last Name</label>
-                        <input type="text" id="lastName" onChange={this.handleChange} />
+                        <input type="text" id="lastName" required onChange={this.handleChange} />
                     </div>
                     <div className="input-field">
                         <label htmlFor="firstName">First Name</label>
-                        <input type="text" id="firstName" onChange={this.handleChange} />
+                        <input type="text" id="firstName" required onChange={this.handleChange} />
+                    </div>
+                    <div className="input-field">
+                        <label htmlFor="phoneNumber">Phone Number</label>
+                        <input type="text" id="phoneNumber" placeholder='optional but preferred' onChange={this.handleChange} />
+                    </div>
+                    <div className="input-field">
+                        <label htmlFor="ntrpLevel">NTRP Level</label>
+                        <input type="text" id="ntrpLevel" placeholder='optional but preferred' onChange={this.handleChange} />
                     </div>
                     <div className="input-field">
                         <button className="btn blue lighten-1 z-depth-0">Sign Up</button>
