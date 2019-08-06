@@ -5,6 +5,8 @@ import { connect } from 'react-redux';
 import { firestoreConnect } from 'react-redux-firebase';
 import { compose } from 'redux';
 import { Redirect } from 'react-router-dom';
+import './shared.css';
+
 
 class Dashboard extends Component {
 
@@ -39,7 +41,7 @@ const mapStateToProps = (state) => {
 export default compose(
     connect(mapStateToProps),
     firestoreConnect([
-        { collection: 'posts' },
-        { collection: 'notifications', limit: 10 }
+        { collection: 'posts', orderBy: ['createdAt', 'desc'] },
+        { collection: 'notifications', limit: 10, orderBy: ['time', 'desc'] }
     ])
 )(Dashboard);
