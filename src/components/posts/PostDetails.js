@@ -16,7 +16,7 @@ const PostDetails = (props) => {
                 <div className="card z-depth-0">
                     <span>
                         <NavLink to='/'>
-                            <i className="material-icons small">keyboard_backspace</i>
+                            <i className="material-icons small back-arrow">keyboard_backspace</i>
                         </NavLink>
                     </span>
                     <div className="card-content">

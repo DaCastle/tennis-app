@@ -1,0 +1,25 @@
+.post-list .post-summary {
+  .card-title {
+    font-weight: 500;
+    font-size: 2vw;
+  }
+  .card-content:hover {
+    background-color: lightblue;
+  }
+}
+
+.notifications-section {
+  .card-title {
+    font-weight: 500;
+    font-size: 2vw;
+  }
+}
+
+.post-details.section {
+  .card-content {
+    padding-top: 0;
+  }
+  .back-arrow:hover {
+    color: black;
+  }
+}
