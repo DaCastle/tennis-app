@@ -53,12 +53,6 @@ const mapStateToProps = (state) => {
     }
 }
 
-// const mapDispatchToProps = (dispatch) => {
-//     return {
-//         UsersList: () => dispatch(getUsers())
-//     }
-// }
-
 export default compose(
     connect(mapStateToProps),
     firestoreConnect([
