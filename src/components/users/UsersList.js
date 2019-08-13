@@ -27,8 +27,8 @@ class UsersList extends Component {
                                     <div className="card-action grey lighten-3 black-text">
                                         <div>
                                             {user.ntrpLevel ? <span> {user.ntrpLevel} NTRP -</span> : null}
-                                            {user.phoneNumber ? <span> Phone: {user.phoneNumber} </span> : null}
-                                            <span>- Email: {user.email} </span>
+                                            {user.phoneNumber ? <span> Phone: {user.phoneNumber} - </span> : null}
+                                            <span>Email: {user.email} </span>
                                             - Joined {user.joined ? moment(user.joined.toDate()).calendar() : null}
                                         </div>
 

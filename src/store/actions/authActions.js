@@ -36,8 +36,8 @@ export const signUp = (newUser) => {
                 firstName: newUser.firstName,
                 lastName: newUser.lastName,
                 initials: newUser.firstName[0] + newUser.lastName[0],
-                phoneNumber: newUser.phoneNumber,
-                ntrpLevel: newUser.ntrpLevel,
+                phoneNumber: newUser.phoneNumber ? newUser.phoneNumber : '',
+                ntrpLevel: newUser.ntrpLevel ? newUser.ntrpLevel : '',
                 email: newUser.email,
                 joined: new Date()
 
