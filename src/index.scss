@@ -8,7 +8,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: url(/img/tennisBackground.jpg) no-repeat;
-  background-size: 100%;
   background-position: bottom;
   background-color: #424242;
   min-height: 100%;
@@ -77,6 +76,18 @@ code {
   padding: 5px;
   margin-top: 20px;
   text-align: center;
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+}
+
+nav .brand-logo {
+  font-size: 4vw;
 }
 
 ::-webkit-input-placeholder {
@@ -84,4 +95,20 @@ code {
   padding-left: 8rem;
   font-style: italic;
   font-size: 1rem;
+}
+
+@media only screen and (max-width: 992px) {
+  nav .brand-logo {
+    left: 30%;
+  }
+
+  .signin-header {
+    h3 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
 }
