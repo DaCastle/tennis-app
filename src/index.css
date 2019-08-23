@@ -69,7 +69,7 @@ code {
     font-size: 1.3rem; }
 
 nav .brand-logo {
-  font-size: 4vw; }
+  font-size: 3vw; }
 
 ::-webkit-input-placeholder {
   color: black;
@@ -77,10 +77,12 @@ nav .brand-logo {
   font-style: italic;
   font-size: 1rem; }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 600px) {
   nav .brand-logo {
-    left: 30%; }
+    display: none; }
   .signin-header h3 {
     font-size: 2rem; }
   .signin-header p {
-    font-size: 1.2rem; } }
+    font-size: 1.2rem; }
+  .signin-form {
+    margin-top: 30px; } }

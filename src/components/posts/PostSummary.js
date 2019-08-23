@@ -8,6 +8,11 @@ const PostSummary = ({ post }) => {
                 <span className="card-title">{post.title}</span>
                 <p>Posted by {post.authorFirstName} {post.authorLastName}</p>
                 <p className="grey-text">{moment(post.createdAt.toDate()).calendar()}</p>
+                <div className="right-align">
+                    <a>
+                        <i class="material-icons">arrow_right_alt</i>
+                    </a>
+                </div>
             </div>
         </div>
     )

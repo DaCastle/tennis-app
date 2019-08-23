@@ -25,16 +25,14 @@ class SignIn extends Component {
         return (
             <div className="container">
 
-                <div className="row">
-                    <div className="col s12 m12">
-                        <div className="white signin-header">
-                            <h3>Welcome to local Tennis, west of the metro</h3>
-                            <p>In order to see the users list and user posts, you will need to Sign Up</p>
-                        </div>
+                <div className="col s12 m12">
+                    <div className="white signin-header">
+                        <h3>Welcome to local Tennis, west of the metro</h3>
+                        <p>In order to see the users list and user posts, you will need to Sign Up</p>
                     </div>
                 </div>
 
-                <form onSubmit={this.handleSubmit} className="white">
+                <form onSubmit={this.handleSubmit} className="white signin-form">
                     <h5 className="grey-text text-darken-3">Sign In</h5>
                     <div className="input-field">
                         <label htmlFor="email">Email</label>
