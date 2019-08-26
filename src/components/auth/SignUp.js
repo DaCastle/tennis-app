@@ -29,7 +29,7 @@ class SignUp extends Component {
                     <h5 className="grey-text text-darken-3">Sign Up</h5>
                     <div className="input-field">
                         <label htmlFor="email">Email</label>
-                        <input type="email" id="email" required placeholder='visible to other users' onChange={this.handleChange} />
+                        <input type="email" id="email" required placeholder='visible to users' onChange={this.handleChange} />
                     </div>
                     <div className="input-field">
                         <label htmlFor="password">Password</label>
@@ -45,11 +45,11 @@ class SignUp extends Component {
                     </div>
                     <div className="input-field">
                         <label htmlFor="phoneNumber">Phone Number</label>
-                        <input type="text" id="phoneNumber" placeholder='optional but preferred - visible to other users' onChange={this.handleChange} />
+                        <input type="text" id="phoneNumber" placeholder='optional - visible to users' onChange={this.handleChange} />
                     </div>
                     <div className="input-field">
                         <label htmlFor="ntrpLevel">NTRP Level</label>
-                        <input type="text" id="ntrpLevel" placeholder='optional but preferred' onChange={this.handleChange} />
+                        <input type="text" id="ntrpLevel" placeholder='optional - visible to users' onChange={this.handleChange} />
                     </div>
                     <div className="input-field">
                         <button className="btn blue lighten-1 z-depth-0">Sign Up</button>

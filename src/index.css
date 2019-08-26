@@ -77,7 +77,7 @@ nav .brand-logo {
   font-style: italic;
   font-size: 1rem; }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 992px) {
   nav .brand-logo {
     display: none; }
   .signin-header h3 {
