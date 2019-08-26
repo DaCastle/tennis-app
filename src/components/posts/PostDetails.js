@@ -23,7 +23,7 @@ const PostDetails = (props) => {
                             <i className="material-icons small back-arrow">keyboard_backspace</i>
                         </NavLink>
                     </span>
-                    <div className="card-content">
+                    <div className="card-content break-word">
 
                         <span className="card-title">{post.title}</span>
                         <p>{post.content}</p>

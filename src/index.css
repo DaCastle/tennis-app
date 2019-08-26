@@ -59,6 +59,9 @@ code {
 .post-details.section .back-arrow:hover {
   color: black; }
 
+.post-details.section .break-word {
+  word-break: break-word; }
+
 .signin-header {
   padding: 5px;
   margin-top: 20px;
